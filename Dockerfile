@@ -7,7 +7,7 @@ RUN pip install Flask
 
 EXPOSE 8080
 
-ADD . /
+ADD https://github.com/henryhoang/docker
 
-ENTRYPOINT ["/usr/bin/python2.7", "/app.py"]
+ENTRYPOINT ["https://github.com/henryhoang/docker", "app.py"]
 
