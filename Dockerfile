@@ -1,5 +1,5 @@
 
-FFROM ubuntu:14.04
+FROM ubuntu:14.04
 MAINTAINER Henry Hoang "henry.hoang@j2.com"
 
 RUN apt-get -q update ; apt-get -yq install python2.7 python-pip
