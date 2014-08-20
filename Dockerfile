@@ -9,5 +9,5 @@ EXPOSE 8080
 
 ADD . https://github.com/henryhoang/docker
 
-ENTRYPOINT ["https://github.com/henryhoang/docker", "app.py"]
+ENTRYPOINT ["https://github.com/henryhoang/docker", "print.py"]
 
