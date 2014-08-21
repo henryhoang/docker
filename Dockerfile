@@ -7,7 +7,7 @@ EXPOSE 8080
 
 ADD . /
 
-ENTRYPOINT ["/bin/sh", "-c", "/run.sh"]
-CMD ["/bin/sh", "-c", "/name.sh"]
+ENTRYPOINT ["/bin/sh", "-c", "/date.sh"]
+
 
 
