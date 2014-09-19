@@ -2,12 +2,17 @@
 FROM ubuntu:14.04
 MAINTAINER Henry Hoang "henry.hoang@j2.com"
 
+RUN apt-get -y update && apt-get -yq install default-jdk
+#RUN javac ConvertMoneyToDollarBills.java
+#RUN java ConvertMoneyToDollarBills
 
-EXPOSE 8080
 
-ADD docker/date.sh /root/date.sh
+EXPOSE 80
 
-ENTRYPOINT ["/bin/sh", "-c", "/date.sh"]
+ADD . /
+#CMD ["./run.sh"]
+
+ENTRYPOINT ["./run.sh"]
 
 
 
